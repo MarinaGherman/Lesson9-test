@@ -4,7 +4,10 @@ window.addEventListener('DOMContentLoaded', function() {
     info = document.querySelector('.info-header'),
     tabContent = document.querySelectorAll('.info-tabcontent');
 
+console.log(tabContent[0]);
+
     function hideTabContent(a) {
+    
         for (let i = a;  i < tabContent.length; i++) {
             tabContent[i].classList.remove('show');
             tabContent[i].classList.add('hide');
@@ -21,6 +24,7 @@ window.addEventListener('DOMContentLoaded', function() {
 
     info.addEventListener('click', function(event) {
         let target = event.target;
+        console.log(target);
         if (target && target.classList.contains('info-header-tab')) {
             for(let i=0; i< tab.length; i++) {
                 if (target == tab[i]) {
@@ -31,5 +35,8 @@ window.addEventListener('DOMContentLoaded', function() {
             }
         }
     });
-    
+    //form
+
+
+
 });
